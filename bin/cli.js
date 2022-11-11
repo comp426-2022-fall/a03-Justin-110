@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 
 import minimist from 'minimist'
-import { roll } from "/lib/roll.js"
+import { roll_dice } from "/lib/roll.js"
 
 const args = minimist(process.argv.slice(2))
 
 // create constants for sides, dice, and rolls.
-const sides = args.sides ? args.sides: 6;
-const dice = args.dice ? args.dice: 2;
-const rolls = args.rolls ? args.rolls: 1;
+const sides_arg = args.sides || 6
+const dice_arg = args.sides || 2
+const rolls_arg = args.rolls || 1
 
 let results = roll_dice(sides, dice, rolls)
 
