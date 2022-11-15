@@ -10,9 +10,7 @@ const sides_arg = args.sides || 6
 const dice_arg = args.sides || 2
 const rolls_arg = args.rolls || 1
 
-let results = roll_dice(sides, dice, rolls)
-
 // print out the results using stringify
-console.log(JSON.stringify({"sides": sides,"dice": dice, "rolls": rolls,"results": results}))  
+console.log(JSON.stringify(roll(args.sides, args.dice, args.rolls)));
 // all done!
 process.exit(0);
