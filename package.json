@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "install of Node.js package",
   "main": "./lib/roll.js",
+  "type": "module",
   "scripts": {
     "test": "roll-dice --sides=6 --dice=3 --rolls=5"
   },
