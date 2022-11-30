@@ -4,7 +4,7 @@
   "description": "install of Node.js package",
   "main": "./lib/roll.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "roll-dice --sides=6 --dice=3 --rolls=5"
   },
   "repository": {
     "type": "git",
